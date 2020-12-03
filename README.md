@@ -18,7 +18,11 @@ include:
 * A class should have only one reason to change (when writing Java code, we will apply this to classes)
 * E.g. do not mix the business logic of a class and logic related with persistence of the objects
 
-OPEN - CLOSED Principle
+## OPEN - CLOSED Principle
 * Modules, classes, and functions should be open for extension but closed for modifications.
 * For this reason, best practice is to try to keep modules unchanged once finished and to add new functionality by extending them using inheritance and polymorphism.
+* Changing already developed code cost many resources in order to test it
 
+## LSP
+* Derived types must be completely substitutable for their base types. The Liskov Substitution Principle (LSP) is strongly related to subtyping polymorphism.
+* When the derived type is substituted with its supertype, the rest of the code will operate with it as it is the subtype. From this point of view, the derived type should behave as its supertype and should not break its behavior. This is called strong behavioral subtyping.
