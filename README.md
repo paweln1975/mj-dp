@@ -26,3 +26,4 @@ include:
 ## LSP
 * Derived types must be completely substitutable for their base types. The Liskov Substitution Principle (LSP) is strongly related to subtyping polymorphism.
 * When the derived type is substituted with its supertype, the rest of the code will operate with it as it is the subtype. From this point of view, the derived type should behave as its supertype and should not break its behavior. This is called strong behavioral subtyping.
+* Zasada podstawiania jest dość prosta: ZAWSZE możesz podstawić obiekt pochodny w miejsce obiektu bazowego. Innymi słowami: obiekt pochodny musi z logicznego punktu widzenia być szczególnym przypadkiem obiektu bazowego.
