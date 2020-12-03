@@ -51,6 +51,8 @@ include:
 * creating object with 10 arguments Contructor is not good idea
 * allow to construct object piece by piece by prividing special API (building object in several steps)
 * examples in Java: StringBuilder
+* ofter implemented with fluent interface by using method chaining (each Builder method returns the reference to the Builder itself)
+* the object to constuct has a private constructor available only for the builder
 
 ## Structural
 
