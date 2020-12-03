@@ -16,6 +16,7 @@ include:
 ## SRP - Single Responsibility Principle
 * A principle that states that every module, class or function in a computer program should have responsibility over a single part of that program's functionality, which it should encapsulate.
 * A class should have only one reason to change (when writing Java code, we will apply this to classes)
+* Different classes handle different independent tasks/problems
 * E.g. do not mix the business logic of a class and logic related with persistence of the objects
 
 ## OPEN - CLOSED Principle
@@ -26,7 +27,7 @@ include:
 ## LSP
 * Derived types must be completely substitutable for their base types. The Liskov Substitution Principle (LSP) is strongly related to subtyping polymorphism.
 * When the derived type is substituted with its supertype, the rest of the code will operate with it as it is the subtype. From this point of view, the derived type should behave as its supertype and should not break its behavior. This is called strong behavioral subtyping.
-* Zasada podstawiania jest dość prosta: ZAWSZE możesz podstawić obiekt pochodny w miejsce obiektu bazowego. Innymi słowami: obiekt pochodny musi z logicznego punktu widzenia być szczególnym przypadkiem obiektu bazowego.
+* Można podstawić typ bazowy zamiast typu pochodnego. Innymi słowami: obiekt pochodny musi z logicznego punktu widzenia być szczególnym przypadkiem obiektu bazowego.
 * Aby dziedziczenie było dobre, klasy pochodne nie powinny nadpisywać metod klas bazowych. Natomiast można je rozszerzyć, poprzez wywołanie metody z klasy bazowej, czyli klasa pochodna powinna rozszerzać klasę bazową bez wpływania na jej działanie.
 
 ## ISP
