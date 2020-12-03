@@ -41,3 +41,17 @@ include:
 * B. "Abstractions should not depend on details. Details should depend on abstractions."
 * Kod z warstw z wyższego poziomu nie powinien zależeć od kodu z niższych warstw. Obie warstwy za to powinny być zależne od abstrakcji. Abstrakcje nie powinny zależeć od szczegółów (konkretnej implementacji). Z kolei szczegóły (implementacja) powinna zależeć od abstrakcji.
 * Najlepiej rozważyć to na przykładzie aplikacji enterprise. Kodem z niższej warstwy może być np. DAL (warstwa dostępu do danych) a  z wyższej – warstwa biznesowa. Według zasady, warstwa biznesowa nie może zawierać bezpośrednio referencji do DAL. Wyobraźmy sobie, że pewnego dnia zmienia się dostawca warstwy dostępowej (np. z Hibernate na inny Framework). Wtedy warstwa wyższego poziomu (biznesowa) musi również zostać zaktualizowana. Ponadto ze względu na zmianę kodu ponownie należy przetestować klasę. Zgodnie z zasadą kod powinien być zależny wyłącznie od abstrakcji a nie szczegółów.
+
+
+# Desin Patterns
+
+# Creational 
+
+### Builder
+* creating object with 10 arguments Contructor is not good idea
+* allow to construct object piece by piece by prividing special API (building object in several steps)
+* examples in Java: StringBuilder
+
+## Structural
+
+## Behavioral  
