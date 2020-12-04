@@ -10,11 +10,13 @@ public class SpecificationDemo {
     private static final Logger logger = LoggerFactory.getLogger(Specification.class);
 
     public static void demo() {
+        logger.info("Specification demo ...");
+
         List<Product> products = new LinkedList<>();
         products.add(new Product("Pencil 1", Color.BLUE, Size.SMALL));
         products.add(new Product("Pencil 2", Color.BLUE, Size.LARGE));
 
-        logger.info("Specification demo ...");
+
 
         ProductFilter productFilter = new ProductFilter();
         productFilter.filter(products,
