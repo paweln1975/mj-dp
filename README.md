@@ -43,7 +43,7 @@ include:
 * Najlepiej rozważyć to na przykładzie aplikacji enterprise. Kodem z niższej warstwy może być np. DAL (warstwa dostępu do danych) a  z wyższej – warstwa biznesowa. Według zasady, warstwa biznesowa nie może zawierać bezpośrednio referencji do DAL. Wyobraźmy sobie, że pewnego dnia zmienia się dostawca warstwy dostępowej (np. z Hibernate na inny Framework). Wtedy warstwa wyższego poziomu (biznesowa) musi również zostać zaktualizowana. Ponadto ze względu na zmianę kodu ponownie należy przetestować klasę. Zgodnie z zasadą kod powinien być zależny wyłącznie od abstrakcji a nie szczegółów.
 
 
-# Desin Patterns
+# Design Patterns
 
 # Creational 
 
