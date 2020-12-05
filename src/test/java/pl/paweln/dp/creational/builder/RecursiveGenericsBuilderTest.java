@@ -1,4 +1,4 @@
-package pl.paweln.dp.specification.creational.builder;
+package pl.paweln.dp.creational.builder;
 
 import org.junit.Assert;
 import org.junit.Test;

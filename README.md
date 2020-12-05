@@ -48,11 +48,27 @@ include:
 # Creational 
 
 ### Builder
-* creating object with 10 arguments Contructor is not good idea
-* allow to construct object piece by piece by prividing special API (building object in several steps)
+* motivation: creating object with 10 arguments constructor is not good idea
+* allow constructing object piece by piece by providing special API (building object in several steps)
 * examples in Java: StringBuilder
 * ofter implemented with fluent interface by using method chaining (each Builder method returns the reference to the Builder itself)
-* the object to constuct has a private constructor available only for the builder
+* the object to be constructed has a private constructor available only for the builder
+* A builder is a separate component for building an object
+* Can either give builder a constructor or return it via static function
+* To make a builder fluent return this
+* Different facets of the objects can be built with different builders working in tandem via base class
+
+### Factory
+* motivation: object creation logic is too complicated
+* cannot change the constructor name or overload it with the same arguments
+* component responsible for whole object creation via single call (not piece by piece like Builder)
+* Factory method (usually static that creates that object)
+* separate class (Factory - external or inner class which has access to private members or constructors)
+* can create a hierarchy of factories with Abstract Factory (to create a hierarchy of objects)
+
+### Prototype
+* motivation: object copying
+
 
 ## Structural
 

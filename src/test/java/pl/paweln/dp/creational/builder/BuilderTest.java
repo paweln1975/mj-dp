@@ -1,10 +1,9 @@
-package pl.paweln.dp.specification.creational.builder;
+package pl.paweln.dp.creational.builder;
 
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import pl.paweln.dp.creational.builder.HtmlBuilder;
 
 public class BuilderTest {
     HtmlBuilder builder = new HtmlBuilder("root");
