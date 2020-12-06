@@ -67,8 +67,8 @@ include:
 * can create a hierarchy of factories with Abstract Factory (to create a hierarchy of objects)
 
 ### Prototype
-* motivation: object copying
-
+* motivation: object copying (clone) and customize
+* an existing object is Prototype and via convenient API (e.g. Factory) deep copy is performed
 
 ## Structural
 
