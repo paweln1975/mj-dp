@@ -1,6 +1,8 @@
 package pl.paweln.dp.creational.prototype.copyconstructor;
 
-public class Address {
+import java.io.Serializable;
+
+public class Address implements Serializable {
     private String streetName;
     private String postalCode;
     private String city;

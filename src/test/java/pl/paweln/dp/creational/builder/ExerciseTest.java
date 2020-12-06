@@ -6,12 +6,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import pl.paweln.dp.creational.builder.exercise.CodeBuilder;
 
-public class CodeBuilderTest {
-    private static final Logger logger = LoggerFactory.getLogger(CodeBuilderTest.class);
+public class ExerciseTest {
+    private static final Logger logger = LoggerFactory.getLogger(ExerciseTest.class);
 
 
     @Test
-    public void testExercise() {
+    public void testCodeBuilder() {
         logger.info("Code Builder test ...");
 
         CodeBuilder cb = new CodeBuilder("Person")

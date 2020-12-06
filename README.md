@@ -68,7 +68,11 @@ include:
 
 ### Prototype
 * motivation: object copying (clone) and customize
-* an existing object is Prototype and via convenient API (e.g. Factory) deep copy is performed
+* an existing object is Prototype and via convenient API (e.g. Factory)
+* possiblites of copying: deep copy (copy constructors) or via serialization
+
+### Singleton
+* motivation: it makes sense to have only one instance of a class within the systems e.g. Database, Object Factory 
 
 ## Structural
 

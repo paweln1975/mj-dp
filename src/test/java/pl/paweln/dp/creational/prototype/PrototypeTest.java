@@ -4,13 +4,11 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import pl.paweln.dp.creational.factory.AbstractFactoryTest;
 import pl.paweln.dp.creational.prototype.copyconstructor.Address;
 import pl.paweln.dp.creational.prototype.copyconstructor.Employee;
 
 public class PrototypeTest {
     private static final Logger logger = LoggerFactory.getLogger(PrototypeTest.class);
-
 
     @Test
     public void testCopyConstructor() {
