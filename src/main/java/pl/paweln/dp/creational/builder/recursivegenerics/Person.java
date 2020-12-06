@@ -1,11 +1,11 @@
 package pl.paweln.dp.creational.builder.recursivegenerics;
 
-public class FluentPerson {
+public class Person {
     private String name;
     private int age;
     private String position;
 
-    private FluentPerson() {}
+    private Person() {}
 
     @Override
     public String toString() {
@@ -42,15 +42,15 @@ public class FluentPerson {
 
     public static class PersonBuilder <SELF extends PersonBuilder<SELF>>
     {
-        protected FluentPerson fluentPerson = new FluentPerson();
+        protected Person person = new Person();
 
         public SELF withName(String name) {
-            fluentPerson.setName(name);
+            person.setName(name);
             return self();
         }
 
         public SELF atAge(int age) {
-            this.fluentPerson.setAge(age);
+            this.person.setAge(age);
             return self();
         }
 
@@ -59,14 +59,14 @@ public class FluentPerson {
             return (SELF) this;
         }
 
-        public FluentPerson build() {
-            return this.fluentPerson;
+        public Person build() {
+            return this.person;
         }
     }
 
     public static class EmployeeBuilder extends PersonBuilder<EmployeeBuilder> {
         public EmployeeBuilder worksAs (String position) {
-            this.fluentPerson.setPosition(position);
+            this.person.setPosition(position);
             return this;
         }
 
