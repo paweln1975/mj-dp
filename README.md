@@ -73,7 +73,14 @@ include:
 
 ### Singleton
 * motivation: it makes sense to have only one instance of a class within the systems e.g. Database, Object Factory 
+* it could easily broken via reflection or serialization/deserialization 
+* there are different possible implementation (based of double lock, with lazy initialization or by use of inner static class  ) 
+* it's good idea not to depend on singleton, it's better to depend on abstraction
 
 ## Structural
+
+### Adapter
+* motivation: a construct which adapts in existing interface X to conform to the required interface Y
+
 
 ## Behavioral  
