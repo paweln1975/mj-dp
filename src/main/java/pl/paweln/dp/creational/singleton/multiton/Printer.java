@@ -2,8 +2,6 @@ package pl.paweln.dp.creational.singleton.multiton;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import pl.paweln.dp.creational.singleton.BasicSingleton;
-import pl.paweln.dp.specification.Product;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -22,7 +20,7 @@ public class Printer {
         return instanceCount;
     }
 
-    private static Map<Subsystem, Printer>
+    private static final Map<Subsystem, Printer>
             instances = new HashMap<>();
 
     public static Printer get(Subsystem ss)
@@ -30,6 +28,7 @@ public class Printer {
         if (!instances.containsKey(ss)) {
             synchronized (Printer.class) {
                 if (!instances.containsKey(ss)) {
+                    @SuppressWarnings("InstantiationOfUtilityClass")
                     Printer instance = new Printer();
                     instances.put(ss, instance);
                     return instance;

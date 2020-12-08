@@ -81,6 +81,10 @@ include:
 
 ### Adapter
 * motivation: a construct which adapts in existing interface X to conform to the required interface Y
+* adapter is a component which aggregates (has reference to...) the adaptee
+* all is about is connecting two incompatible interfaces, converting call of one interface into another 
+* there are two approaches – class adapter (use inheritance) and object adapter (use composition)
+* if you implement an adapter pattern you probably create bunch of temporary objects, to avoid extra generation of these objects implement a cache (performace optimization)
 
 
 ## Behavioral  

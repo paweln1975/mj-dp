@@ -13,7 +13,7 @@ public class ExerciseTest {
 
     @Test
     public void testSingletonTesterWithNonSingleton() {
-        Supplier<Object> supplier = () -> 10;
+        Supplier<Object> supplier = Object::new;
         Assert.assertFalse(SingletonTester.isSingleton(supplier));
     }
 
