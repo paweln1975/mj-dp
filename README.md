@@ -86,5 +86,21 @@ include:
 * there are two approaches – class adapter (use inheritance) and object adapter (use composition)
 * if you implement an adapter pattern you probably create bunch of temporary objects, to avoid extra generation of these objects implement a cache (performace optimization)
 
+### Bridge
+* motivation: avoids entity explosion ('Cartesian product')
+* decouples interface hierarchy from implementation hierarchy
+* connecting components through abstraction
+* it's stronger form of encapsulation
+
+### Composite
+* motivation: allows treating objects both scalar and composite in the same fashion
+* it's composition of objects e.g. group of shapes made of several shapes
+* Shape and List<Shape> have the same API
+* Java gives container iteration with Iterable<T> interface (single objects return single element collection containing only this) 
+ 
+### Decorator
+* motivation: adding additional functionality (SRP) to an existing class without altering it (OCP)
+* to be able to interact with existing structures
+* two option: inherit or build a decorator
 
 ## Behavioral  

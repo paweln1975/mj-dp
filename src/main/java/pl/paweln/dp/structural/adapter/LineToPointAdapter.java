@@ -8,6 +8,7 @@ import java.util.ArrayList;
 public class LineToPointAdapter extends ArrayList<Point> {
     private static int count = 0;
     private static final Logger logger = LoggerFactory.getLogger(LineToPointAdapter.class);
+
     public LineToPointAdapter(Line line) {
         logger.info(
                 String.format("%d: Generating points for line [%d,%d]-[%d,%d] (no caching)",
