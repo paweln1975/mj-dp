@@ -100,7 +100,12 @@ include:
  
 ### Decorator
 * motivation: adding additional functionality (SRP) to an existing class without altering it (OCP)
-* to be able to interact with existing structures
+* to be able to interact with existing structures (keeps the reference to decorated object)
 * two option: inherit or build a decorator
+
+### Facade
+* motivation: many systems working together are hidden behind a simple and easy to use API 
+* exposing several components through a single interface
+* 
 
 ## Behavioral  
