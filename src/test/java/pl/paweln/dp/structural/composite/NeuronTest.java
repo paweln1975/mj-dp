@@ -13,6 +13,9 @@ public class NeuronTest {
 
     @Test
     public void testNeuronLayersTest() {
+
+        logger.info("Neuron test ...");
+
         Neuron neuron = new Neuron();
         Neuron neuron2 = new Neuron();
         NeuronLayer layer = new NeuronLayer();

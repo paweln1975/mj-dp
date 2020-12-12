@@ -105,7 +105,7 @@ include:
 
 ### Facade
 * motivation: many systems working together are hidden behind a simple and easy to use API 
-* exposing several components through a single interface
-* 
+* exposing several components through a single interface (API)  
+* provide a single API over set of classses
 
 ## Behavioral  

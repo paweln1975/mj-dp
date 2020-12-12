@@ -13,6 +13,7 @@ public class DynamicDecoratorTest {
 
     @Test
     public void testCompositeShare() {
+        logger.info("Dynamic decorator test ...");
         TransparentShape shape = new TransparentShape(
                 new ColoredShape(
                         new Circle(10), "red"

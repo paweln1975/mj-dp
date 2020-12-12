@@ -10,6 +10,7 @@ public class CompositeTest {
 
     @Test
     public void testGraphicObject() {
+        logger.info("Composite test ...");
         String ls = System.lineSeparator();
         String expected =
                 "My Drawing" + ls +
