@@ -1,13 +1,9 @@
-package pl.paweln.dp.structural.composite;
+package pl.paweln.dp.structural.composite.exercise;
 
 import org.junit.Assert;
 import org.junit.Test;
-import pl.paweln.dp.structural.composite.exercise.ManyValues;
-import pl.paweln.dp.structural.composite.exercise.MyList;
-import pl.paweln.dp.structural.composite.exercise.SingleValue;
 
 import java.util.Arrays;
-import java.util.List;
 
 public class ExerciseTest {
     @Test

@@ -108,4 +108,15 @@ include:
 * exposing several components through a single interface (API)  
 * provide a single API over set of classses
 
+### Flyweight
+* motivation: Avoid redundancy when storing data
+* store the data externally and use pointers (index) or operate on ranges
+* space optimization technique that let us use less memory by storing externally the data associated with similar objects
+
+### Proxy
+* motivation: an interface for accessing a particular resource
+* proxy allows using the same interface but different behaviour
+* communication proxy - accessing the remote resource
+* proxy is a class that functions as interface to particular resource. That resource may be remote, expensive to construct, or may required logging or other added functionality
+
 ## Behavioral  

@@ -1,10 +1,9 @@
-package pl.paweln.dp.creational.builder;
+package pl.paweln.dp.creational.builder.exercise;
 
 import org.junit.Assert;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import pl.paweln.dp.creational.builder.exercise.CodeBuilder;
 
 public class ExerciseTest {
     private static final Logger logger = LoggerFactory.getLogger(ExerciseTest.class);

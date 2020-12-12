@@ -1,9 +1,8 @@
-package pl.paweln.dp.structural.decorator;
+package pl.paweln.dp.structural.decorator.exercise;
 
 
 import org.junit.Assert;
 import org.junit.Test;
-import pl.paweln.dp.structural.decorator.exercise.Dragon;
 
 public class ExerciseTest {
     @Test

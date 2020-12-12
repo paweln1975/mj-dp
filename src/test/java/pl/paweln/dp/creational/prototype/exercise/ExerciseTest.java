@@ -1,14 +1,12 @@
-package pl.paweln.dp.creational.prototype;
+package pl.paweln.dp.creational.prototype.exercise;
 
 import org.junit.Assert;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import pl.paweln.dp.creational.prototype.exercise.Line;
-import pl.paweln.dp.creational.prototype.exercise.Point;
 
 public class ExerciseTest {
-    private static final Logger logger = LoggerFactory.getLogger(pl.paweln.dp.creational.builder.ExerciseTest.class);
+    private static final Logger logger = LoggerFactory.getLogger(pl.paweln.dp.creational.builder.exercise.ExerciseTest.class);
 
     @Test
     public void testPointDeepCopy() {

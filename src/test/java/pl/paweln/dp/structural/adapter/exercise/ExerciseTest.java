@@ -1,10 +1,7 @@
-package pl.paweln.dp.structural.adapter;
+package pl.paweln.dp.structural.adapter.exercise;
 
 import org.junit.Assert;
 import org.junit.Test;
-import pl.paweln.dp.structural.adapter.exercise.Rectangle;
-import pl.paweln.dp.structural.adapter.exercise.Square;
-import pl.paweln.dp.structural.adapter.exercise.SquareToRectangleAdapter;
 
 public class ExerciseTest {
     @Test
