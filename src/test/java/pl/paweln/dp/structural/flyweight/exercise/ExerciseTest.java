@@ -2,13 +2,8 @@ package pl.paweln.dp.structural.flyweight.exercise;
 
 import org.junit.Assert;
 import org.junit.Test;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import pl.paweln.dp.structural.flyweight.FormattedTextTest;
-import pl.paweln.dp.structural.flyweight.exercise.Sentence;
 
 public class ExerciseTest {
-    private static Logger logger = LoggerFactory.getLogger(FormattedTextTest.class);
 
     @Test
     public void testSentence() {

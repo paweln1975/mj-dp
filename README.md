@@ -118,5 +118,9 @@ include:
 * proxy allows using the same interface but different behaviour
 * communication proxy - accessing the remote resource
 * proxy is a class that functions as interface to particular resource. That resource may be remote, expensive to construct, or may required logging or other added functionality
+* proxy vs decorator: proxy provides an identical interface while decorator provides an enhanced interface, decorator aggregates (or has reference to) what it is decorating; proxy doesn't have to
+* proxy has the same interface as underlying object
 
 ## Behavioral  
+
+### Chain of Responsibility

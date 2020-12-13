@@ -6,12 +6,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class ExerciseTest {
-    private static final Logger logger = LoggerFactory.getLogger(ExerciseTest.class);
-
 
     @Test
     public void testCodeBuilder() {
-        logger.info("Code Builder test ...");
 
         CodeBuilder cb = new CodeBuilder("Person")
                 .addField("name", "String")
@@ -24,7 +21,6 @@ public class ExerciseTest {
                 "  public int age;" + ls +
                 "}";
 
-        logger.info("Generated code: " + cb);
         Assert.assertEquals(expected, cb.toString());
     }
 }

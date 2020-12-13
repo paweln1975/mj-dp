@@ -2,15 +2,13 @@ package pl.paweln.dp.creational.prototype.exercise;
 
 import org.junit.Assert;
 import org.junit.Test;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
 
 public class ExerciseTest {
-    private static final Logger logger = LoggerFactory.getLogger(pl.paweln.dp.creational.builder.exercise.ExerciseTest.class);
 
     @Test
     public void testPointDeepCopy() {
-        logger.info("Prototype exercise test ...");
+
         int startX = 10, startY = 15, endX = -4, endY = 80;
         int newStartX = 20, newStartY = 10, newEndX = -40, newEndY = 20;
 
