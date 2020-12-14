@@ -2,10 +2,14 @@ package pl.paweln.dp.structural.adapter;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class LineToPointAdapterTest {
+    private static Logger logger = LoggerFactory.getLogger(LineToPointAdapterTest.class);
     @Test
     public void testLineToPointAdapterNoCache() {
+        logger.info("Adapter with no cache test ...");
         Line line = new Line(new Point(0, 0), new Point(0, 5));
         LineToPointAdapter adapter = new LineToPointAdapter(line);
 
@@ -27,6 +31,7 @@ public class LineToPointAdapterTest {
 
     @Test
     public void testLineToPointAdapterCached() {
+        logger.info("Adapter with cache test ...");
         Line line1 = new Line(new Point(15, 15), new Point(15, 19));
         Line line2 = new Line(new Point(15, 15), new Point(15, 19));
 

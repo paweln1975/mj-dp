@@ -124,3 +124,6 @@ include:
 ## Behavioral  
 
 ### Chain of Responsibility
+* A chain of components which all get a chance to process command, query or event, optionally have a default processing implementation and ability to terminate the processing chain
+* command - asking for action (changing sth), query - asking for information (getting values)
+* Command Query Separation (CQS) - having separate means of sending commands and queries
