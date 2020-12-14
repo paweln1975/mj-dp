@@ -127,3 +127,5 @@ include:
 * A chain of components which all get a chance to process command, query or event, optionally have a default processing implementation and ability to terminate the processing chain
 * command - asking for action (changing sth), query - asking for information (getting values)
 * Command Query Separation (CQS) - having separate means of sending commands and queries
+* implemented as chain of references or as chain or centralized construct
+* possible control of the object order in the chain or object removal from the chain (e.g. AutoClosable close())
