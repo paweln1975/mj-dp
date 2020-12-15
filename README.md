@@ -129,3 +129,10 @@ include:
 * Command Query Separation (CQS) - having separate means of sending commands and queries
 * implemented as chain of references or as chain or centralized construct
 * possible control of the object order in the chain or object removal from the chain (e.g. AutoClosable close())
+
+### Command
+* an object that represents an operation (instructions to perform a particular action)
+* usage: GUI commands, undo/redo/macro recording
+* encapsulation all details of an operation in a separate object
+* define instructions for applying the command and optionally define instructions for undoing the command
+* can create macros (composite commands)
