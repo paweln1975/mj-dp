@@ -145,5 +145,10 @@ include:
 
 ### Iterator
 * helps to travers of data structures
+* An Iterator is a class that facilitates the traversal
+* Java has Iterator<T> and Iterable<T> (for loops), Iterator implements Iterator<T>, class of objects that meant to be iterable implements Iterable<T>
+* Iterator cannot be recursive
+
+### Mediator
 
 
