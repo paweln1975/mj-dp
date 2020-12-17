@@ -136,3 +136,14 @@ include:
 * encapsulation all details of an operation in a separate object
 * define instructions for applying the command and optionally define instructions for undoing the command
 * can create macros (composite commands)
+
+### Interpreter
+* a component that processes structured text data
+* turning them into separate lexical tokens (lexing) and then interpreting sequences of said tokens (parsing)
+* first stage is lexing stage: turning the text into set of tokens e.g. 3 * (3 + 5) --> Lit(3) LP Lit(3) Plus Lit(5) RP
+* second stage is parsing tokens into a meaningful construct --> Multiplication(Integer(3), Addition(Integer(3), Integer(5)))
+
+### Iterator
+* helps to travers of data structures
+
+
