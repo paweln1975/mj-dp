@@ -3,7 +3,7 @@ package pl.paweln.dp.behavioral.mediator;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Person implements MessageRecipient {
+public class Person implements MessageProcessor {
 
     private List<String> chatMessages = new LinkedList<>();
 

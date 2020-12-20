@@ -10,9 +10,9 @@ public class ChatRoom {
         this.name = name;
     }
 
-    private List<MessageRecipient> members = new LinkedList<>();
+    private List<MessageProcessor> members = new LinkedList<>();
 
-    public void join(MessageRecipient member) {
+    public void join(MessageProcessor member) {
         if (!this.members.contains(member)) {
             this.members.add(member);
             member.setChatRoom(this);
@@ -20,7 +20,7 @@ public class ChatRoom {
         }
     }
 
-    public void leave (MessageRecipient member) {
+    public void leave (MessageProcessor member) {
         if (this.members.contains(member)) {
             this.broadcast("Room:" + name, member.getName() + " has left the room");
             this.members.remove(member);

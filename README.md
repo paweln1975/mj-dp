@@ -124,21 +124,21 @@ include:
 ## Behavioral  
 
 ### Chain of Responsibility
-* A chain of components which all get a chance to process command, query or event, optionally have a default processing implementation and ability to terminate the processing chain
+* motivation: to have a chain of components which all get a chance to process command, query or event, optionally have a default processing implementation and ability to terminate the processing chain
 * command - asking for action (changing sth), query - asking for information (getting values)
 * Command Query Separation (CQS) - having separate means of sending commands and queries
 * implemented as chain of references or as chain or centralized construct
 * possible control of the object order in the chain or object removal from the chain (e.g. AutoClosable close())
 
 ### Command
-* an object that represents an operation (instructions to perform a particular action)
+* motivation: to have an object that represents an operation (instructions to perform a particular action)
 * usage: GUI commands, undo/redo/macro recording
 * encapsulation all details of an operation in a separate object
 * define instructions for applying the command and optionally define instructions for undoing the command
 * can create macros (composite commands)
 
 ### Interpreter
-* a component that processes structured text data
+* motivation: a component that processes structured text data
 * turning them into separate lexical tokens (lexing) and then interpreting sequences of said tokens (parsing)
 * first stage is lexing stage: turning the text into set of tokens e.g. 3 * (3 + 5) --> Lit(3) LP Lit(3) Plus Lit(5) RP
 * second stage is parsing tokens into a meaningful construct --> Multiplication(Integer(3), Addition(Integer(3), Integer(5)))
@@ -150,7 +150,16 @@ include:
 * Iterator cannot be recursive
 
 ### Mediator
-* facilities communication between components without them being aware of each other or having direct references to each other
+* motivation: facilities communication between components without them being aware of each other or having direct references to each other
 * e.g. users in a chat room
 * all components have reference to some central component with help with the communications (they may go in or out of the system at any time)
+* create a mediator and each object has reference to it
+* engage the mediator in a bidirectional communication between connected components
+* mediator has a function that components can call (broadcast)
+* the components have a function that mediator can call (receive event)
+* e.g. use JavaRx library (reactive event extensions)
 
+### Memento
+* motivation: to keep a sort of token/handle (returned by a method) then to allow to return an object with particular state
+* The token represents the system state and then allows us to roll back the state of the system to the moment when the token was generated
+* May or may not directly expose state information (typically the token is immutable)

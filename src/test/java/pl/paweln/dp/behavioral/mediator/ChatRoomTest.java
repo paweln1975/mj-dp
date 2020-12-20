@@ -2,12 +2,17 @@ package pl.paweln.dp.behavioral.mediator;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class ChatRoomTest {
+    private final static Logger logger = LoggerFactory.getLogger(ChatRoomTest.class);
+
     @Test
     public void testJoining() {
-        MessageRecipient john = new Person("John");
-        MessageRecipient jenny = new Person("Jenny");
+        logger.info("Staring ChatRoomTest 1 ...");
+        MessageProcessor john = new Person("John");
+        MessageProcessor jenny = new Person("Jenny");
 
         ChatRoom room = new ChatRoom("Meeting 1");
         room.join(john);
@@ -19,8 +24,9 @@ public class ChatRoomTest {
 
     @Test
     public void testLeaving() {
-        MessageRecipient john = new Person("John");
-        MessageRecipient jenny = new Person("Jenny");
+        logger.info("Staring ChatRoomTest 2 ...");
+        MessageProcessor john = new Person("John");
+        MessageProcessor jenny = new Person("Jenny");
 
         ChatRoom room = new ChatRoom("Meeting 2");
         room.join(john);
@@ -34,22 +40,20 @@ public class ChatRoomTest {
 
     @Test
     public void testMessaging() {
-        MessageRecipient john = new Person("John");
-        MessageRecipient jenny = new Person("Jenny");
-        MessageRecipient simon = new Person("Simon");
+        logger.info("Staring ChatRoomTest 3 ...");
+        MessageProcessor john = new Person("John");
+        MessageProcessor jenny = new Person("Jenny");
+        MessageProcessor simon = new Person("Simon");
 
         ChatRoom room = new ChatRoom("Meeting 3");
         room.join(john);
         room.join(jenny);
 
-        Person p = (Person) john;
-        p.say("Hello " + jenny.getName());
-
-        p.privateMessage(jenny.getName(), "How are you?");
+        john.say("Hello " + jenny.getName());
+        john.privateMessage(jenny.getName(), "How are you?");
 
         room.join(simon);
-
-        p.say("Hello everyone");
+        john.say("Hello everyone");
 
         Assert.assertEquals(3, john.getMessagesCount());
         Assert.assertEquals(5, jenny.getMessagesCount());
