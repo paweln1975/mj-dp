@@ -150,5 +150,7 @@ include:
 * Iterator cannot be recursive
 
 ### Mediator
-
+* facilities communication between components without them being aware of each other or having direct references to each other
+* e.g. users in a chat room
+* all components have reference to some central component with help with the communications (they may go in or out of the system at any time)
 
