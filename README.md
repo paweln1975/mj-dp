@@ -163,3 +163,8 @@ include:
 * motivation: to keep a sort of token/handle (returned by a method) then to allow to return an object with particular state
 * The token represents the system state and then allows us to roll back the state of the system to the moment when the token was generated
 * May or may not directly expose state information (typically the token is immutable)
+* generally used for the rollback the system changes by restoring the system state store in a memento token/handle
+* a memento is not required to expose the system state
+* could be used to implement undo/redo operation
+
+### Null Object
