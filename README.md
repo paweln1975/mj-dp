@@ -168,3 +168,7 @@ include:
 * could be used to implement undo/redo operation
 
 ### Null Object
+* motivation: a non-operating object that replaces check of NULL object instance
+* Instead of putting if check for a null value, Null Object reflects a "do nothing relationship"
+* Such Null object can also be used to provide default behaviour in case data is not available
+* implement an interface and implement methods with empty bodies, supply Null Object in place of an actual object
