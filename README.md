@@ -172,3 +172,26 @@ include:
 * Instead of putting if check for a null value, Null Object reflects a "do nothing relationship"
 * Such Null object can also be used to provide default behaviour in case data is not available
 * implement an interface and implement methods with empty bodies, supply Null Object in place of an actual object
+
+### Observer
+* motivation: we need to be informed when certain things happen
+* we want to listen to events and to be notified when they occur (typical Java pattern: addXXXListener())
+* Java now has a functional objects: Supplier<T>, Consumer<T>, Function<T>
+* An observer is an object that wishes to be informed about event, and an observable is an entitity generating event
+* An observer must provide an event to subscribe (be carefull in mulitithreading)
+* Observer and Observable are deprecated in Java, use RxJava library (very similiar)
+
+### State
+* motivation: object behaviour is determined by its state
+* an object transitions from one state to the other (something triggers the transition)
+* change can be explicit or in response to an event
+* the construct which manages the state and transitions we call state machine
+
+### Strategy
+
+
+### Template Method
+
+
+### Visitor
+
