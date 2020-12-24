@@ -186,6 +186,8 @@ include:
 * an object transitions from one state to the other (something triggers the transition)
 * change can be explicit or in response to an event
 * the construct which manages the state and transitions we call state machine
+* define possible states and events/triggers (plus state entry, exit criteria, actions when a particular event causes transition, guard conditions enabling/disabling a transition, default transition when no action found for the event)
+
 
 ### Strategy
 
