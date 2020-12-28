@@ -1,8 +1,8 @@
-package pl.paweln.dp.behavioral.interpreter;
+package pl.paweln.dp.behavioral.interpreter.exercise;
 
 import org.junit.Test;
+
 import static org.junit.Assert.assertEquals;
-import pl.paweln.dp.behavioral.interpreter.exercise.ExpressionProcessor;
 
 public class ExerciseTest {
     @Test

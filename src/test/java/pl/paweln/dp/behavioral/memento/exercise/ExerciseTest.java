@@ -1,13 +1,10 @@
-package pl.paweln.dp.behavioral.memento;
+package pl.paweln.dp.behavioral.memento.exercise;
 
 import org.junit.Test;
-import static org.junit.Assert.*;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import pl.paweln.dp.behavioral.memento.exercise.Memento;
-import pl.paweln.dp.behavioral.memento.exercise.Token;
-import pl.paweln.dp.behavioral.memento.exercise.TokenMachine;
+
+import static org.junit.Assert.assertEquals;
 
 public class ExerciseTest {
     private static final Logger logger = LoggerFactory.getLogger(ExerciseTest.class);

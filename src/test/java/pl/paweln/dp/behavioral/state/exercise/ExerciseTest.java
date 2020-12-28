@@ -1,4 +1,4 @@
-package pl.paweln.dp.behavioral.state;
+package pl.paweln.dp.behavioral.state.exercise;
 
 import org.junit.Test;
 import pl.paweln.dp.behavioral.state.exercise.CombinationLock;

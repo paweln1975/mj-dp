@@ -1,8 +1,6 @@
-package pl.paweln.dp.behavioral.mediator;
+package pl.paweln.dp.behavioral.mediator.exercise;
 
 import org.junit.Test;
-import pl.paweln.dp.behavioral.mediator.exercise.Mediator;
-import pl.paweln.dp.behavioral.mediator.exercise.Participant;
 
 import static org.junit.Assert.assertEquals;
 

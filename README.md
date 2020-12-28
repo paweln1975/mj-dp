@@ -188,8 +188,16 @@ include:
 * the construct which manages the state and transitions we call state machine
 * define possible states and events/triggers (plus state entry, exit criteria, actions when a particular event causes transition, guard conditions enabling/disabling a transition, default transition when no action found for the event)
 
-
 ### Strategy
+* motivation: define part of the system behavior (e.g. high level algorithm which can be reused) and the exact behavior may be defined at the run-time (dynamic) or compile-time (static)
+* define an interface you expect each strategy will follow
+* provide dynamic or either static strategy composition into the overall algorithm
+
+### Template method
+* motivation: algorithm can be composed into common parts + specifics, similar to Strategy pattern
+* Template method pattern does a similar thing to Strategy pattern but through inheritance
+* overall algorithm make use of abstract member and inheritors override the abstract methods
+* allows to define the 'skeleton' of the algorithm with concrete implementations in the subclasses
 
 
 ### Template Method

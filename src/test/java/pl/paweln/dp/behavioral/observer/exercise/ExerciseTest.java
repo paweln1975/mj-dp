@@ -1,10 +1,9 @@
-package pl.paweln.dp.behavioral.observer;
+package pl.paweln.dp.behavioral.observer.exercise;
 
 import org.junit.Test;
-import pl.paweln.dp.behavioral.observer.exercise.Game;
-import pl.paweln.dp.behavioral.observer.exercise.Rat;
 
 import java.io.IOException;
+
 import static org.junit.Assert.assertEquals;
 
 public class ExerciseTest {

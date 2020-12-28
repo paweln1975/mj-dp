@@ -8,7 +8,7 @@ public class Account {
         this.log = log;
     }
 
-    public void someOperation() throws Exception
+    public int someOperation() throws Exception
     {
         int c = log.getRecordCount();
         log.logInfo("Performing an operation");
@@ -17,5 +17,7 @@ public class Account {
 
         if (log.getRecordCount() >= log.getRecordLimit())
             throw new Exception();
+
+        return log.getRecordCount();
     }
 }
