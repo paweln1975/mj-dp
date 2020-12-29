@@ -197,11 +197,11 @@ include:
 * motivation: algorithm can be composed into common parts + specifics, similar to Strategy pattern
 * Template method pattern does a similar thing to Strategy pattern but through inheritance
 * overall algorithm make use of abstract member and inheritors override the abstract methods
-* allows to define the 'skeleton' of the algorithm with concrete implementations in the subclasses
-
-
-### Template Method
-
+* allows to define the 'skeleton' of the algorithm (in an abstract class) with concrete implementations in the subclasses
 
 ### Visitor
+* motivation: allows adding na extra behavior to the entire hierarchy of class
+* we do not want to modify the whole hierarchy, we want to avoid type checks, we need access to non-common aspects of classes
+* this is the pattern where a component (visitor) traverses the entire inheritance hierarchy
+* implemented by propagating a single visit() method throughout the entire hierarchy
 
