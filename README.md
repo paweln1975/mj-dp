@@ -49,7 +49,7 @@ include:
 
 ### Builder
 * motivation: creating object with 10 arguments constructor is not good idea
-* allow constructing object piece by piece by providing special API (building object in several steps)
+* allows constructing object piece by piece by providing special API (building object in several steps)
 * examples in Java: StringBuilder
 * ofter implemented with fluent interface by using method chaining (each Builder method returns the reference to the Builder itself)
 * the object to be constructed has a private constructor available only for the builder
@@ -69,13 +69,13 @@ include:
 ### Prototype
 * motivation: object copying (clone) and customize
 * an existing object is Prototype and via convenient API (e.g. Factory)
-* possiblites of copying: deep copy (copy constructors) or via serialization
+* possibilities of copying: via a deep copy (copy constructors) or via serialization
 
 ### Singleton
 * motivation: it makes sense to have only one instance of a class within the systems e.g. Database, Object Factory 
 * it could easily broken via reflection or serialization/deserialization 
 * there are different possible implementation (based of double lock, with lazy initialization or by use of inner static class  ) 
-* it's good idea not to depend on singleton, it's better to depend on abstraction
+* it's a good idea not to depend on a singleton, it's better to depend on abstraction
 
 ## Structural
 
@@ -84,7 +84,7 @@ include:
 * adapter is a component which aggregates (has reference to...) the adaptee
 * all is about is connecting two incompatible interfaces, converting call of one interface into another 
 * there are two approaches – class adapter (use inheritance) and object adapter (use composition)
-* if you implement an adapter pattern you probably create bunch of temporary objects, to avoid extra generation of these objects implement a cache (performace optimization)
+* if you implement an adapter pattern you probably create a bunch of temporary objects, to avoid extra generation of these objects implement a cache (performace optimization)
 
 ### Bridge
 * motivation: avoids entity explosion ('Cartesian product')
@@ -106,7 +106,7 @@ include:
 ### Facade
 * motivation: many systems working together are hidden behind a simple and easy to use API 
 * exposing several components through a single interface (API)  
-* provide a single API over set of classses
+* provide a single API over set of classes
 
 ### Flyweight
 * motivation: Avoid redundancy when storing data
@@ -156,7 +156,7 @@ include:
 * create a mediator and each object has reference to it
 * engage the mediator in a bidirectional communication between connected components
 * mediator has a function that components can call (broadcast)
-* the components have a function that mediator can call (receive event)
+* the components have a function that mediator can call (receive an event)
 * e.g. use JavaRx library (reactive event extensions)
 
 ### Memento
@@ -176,7 +176,7 @@ include:
 ### Observer
 * motivation: we need to be informed when certain things happen
 * we want to listen to events and to be notified when they occur (typical Java pattern: addXXXListener())
-* Java now has a functional objects: Supplier<T>, Consumer<T>, Function<T>
+* Java now has a functional objects: *Supplier\<T\>*, *Consumer\<T\>*, *Function\<T\>*
 * An observer is an object that wishes to be informed about event, and an observable is an entitity generating event
 * An observer must provide an event to subscribe (be carefull in mulitithreading)
 * Observer and Observable are deprecated in Java, use RxJava library (very similiar)
@@ -203,5 +203,5 @@ include:
 * motivation: allows adding na extra behavior to the entire hierarchy of class
 * we do not want to modify the whole hierarchy, we want to avoid type checks, we need access to non-common aspects of classes
 * this is the pattern where a component (visitor) traverses the entire inheritance hierarchy
-* implemented by propagating a single visit() method throughout the entire hierarchy
+* implemented by propagating a single *visit()* method throughout the entire hierarchy
 
