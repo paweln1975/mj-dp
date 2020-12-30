@@ -1,5 +1,7 @@
 package pl.paweln.dp.behavioral.visitor.intrusive;
 
+import pl.paweln.dp.behavioral.visitor.acyclic.AdditionExpressionVisitor;
+import pl.paweln.dp.behavioral.visitor.acyclic.Visitor;
 import pl.paweln.dp.behavioral.visitor.classic.ExpressionVisitor;
 
 public class AdditionExpression extends Expression {
@@ -22,5 +24,12 @@ public class AdditionExpression extends Expression {
     @Override
     public void accept(ExpressionVisitor visitor) {
         visitor.visit(this);
+    }
+
+    @Override
+    // acyclic
+    public void accept(Visitor visitor) {
+        if (visitor instanceof AdditionExpressionVisitor)
+            ((AdditionExpressionVisitor) visitor).visit(this);
     }
 }

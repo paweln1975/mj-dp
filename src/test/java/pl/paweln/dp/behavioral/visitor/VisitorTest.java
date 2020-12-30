@@ -5,6 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import pl.paweln.dp.behavioral.visitor.acyclic.AcyclicExpressionPrinter;
 import pl.paweln.dp.behavioral.visitor.classic.ExpressionCalculator;
 import pl.paweln.dp.behavioral.visitor.classic.ExpressionPrinterDoubleDispatch;
 import pl.paweln.dp.behavioral.visitor.intrusive.AdditionExpression;
@@ -66,6 +67,16 @@ public class VisitorTest {
         logger.info("Result: " + calc.result);
 
         Assert.assertEquals(6, calc.result, 0);
+    }
+
+    @Test
+    public void testAcyclicVisitor() {
+        // uses double dispatch approach
+        logger.info("Start Acyclic Visitor test ...");
+        AcyclicExpressionPrinter printer = new AcyclicExpressionPrinter();
+        printer.visit(e);
+        logger.info("Expression: " + printer.toString());
+        Assert.assertEquals(expExpr, printer.toString());
     }
 
 

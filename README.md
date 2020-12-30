@@ -203,5 +203,9 @@ include:
 * motivation: allows adding na extra behavior to the entire hierarchy of class
 * we do not want to modify the whole hierarchy, we want to avoid type checks, we need access to non-common aspects of classes
 * this is the pattern where a component (visitor) traverses the entire inheritance hierarchy
-* implemented by propagating a single *visit()* method throughout the entire hierarchy
+* implemented by propagating a single *accept(Visitor v)* method throughout the entire hierarchy
+* create a visitor for each element in the hierarchy
+* each *accept()* simply calls *visitor.visit(this)*
+* possible different approaches of implementation: Intrusive, Reflective, Classic (Double Dispatch) and Acyclic (with ISP)
+* Acyclic gives the greatest flexibility at a cost to performance (type checking of the visitor)
 
